@@ -22,9 +22,6 @@ jobs:
         python-version: 3.9
     - name: Install dependencies
       run: pip install -e .
-    - name: cd test
-      run: cd test
-    - name: cd test
-      run: ls
-    - name: Fetch test sites
-      run: status-fetch fetch
+      run: |
+        cd test
+        status-fetch fetch
