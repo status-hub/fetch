@@ -6,17 +6,14 @@ except ImportError:
 with open("README.md", "r") as readme_file:
     readme = readme_file.read()
 
-def getPackages():
-
-    p = []
-
-    with open('requirements.txt', 'r') as f:
-
-        for l in f.read().split('\n'):
-
-            p.append(l)
-
-    return p
+packages = [
+    "click",
+    "termcolor",
+    "xmltodict",
+    "progress",
+    "requests",
+    "pyyaml",
+]
 
 setup(
     name='status-fetch',
