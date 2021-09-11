@@ -1,0 +1,6 @@
+click==8.0.1
+termcolor
+xmltodict
+progress
+requests
+pyyaml
