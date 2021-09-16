@@ -14,7 +14,10 @@ def cli():
     pass
 
 @cli.command()
-def fetch():
+# @cli.argument("--repo.user", '-ru', required=1)
+# @cli.argument("--repo.name", '-rn', required=1)
+def fetch(user, name):
+# def fetch(user, name):
 
 
     if 'sites' in config:
